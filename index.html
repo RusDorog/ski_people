@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preload" href="/public/fonts/OpenSans-Regular.woff2" as="font" type="font/wolf2" crossorigin>
-    <link rel="preload" href="/public/fonts/Inter.woff2" as="font" type="font/wolf2" crossorigin>
-    <link rel="preload" href="/public/fonts/Inter-Black.woff2" as="font" type="font/wolf2" crossorigin>
+    <link rel="preload" href="/public/fonts/OpenSans-Regular.woff2" as="font" crossorigin>
+    <link rel="preload" href="/public/fonts/Inter.woff2" as="font" crossorigin>
+    <link rel="preload" href="/public/fonts/Inter-Black.woff2" as="font" crossorigin>
     <script type="module" src="/src/main.js"></script>
     <title>Ski People</title>
   </head>
@@ -76,7 +76,7 @@
       <div class="breadcrumb">
         <div class="container">
           <nav class="breadcrumb__navigation">
-            <ul class="breadcrund__list">
+            <ul class="breadcrumd__list">
               <li class="breadcrumb__item">
                 <a href="#" class="breadcrumb__link">Главная</a>
               </li>
@@ -172,7 +172,7 @@
               <h3 class="cart__item-title">Горные лыжи</h3>
               <p class="cart__item-price">5&nbsp;000&nbsp;₽</p>
               <p class="cart__item-id">арт.&nbsp;84348945757</p>
-              <div class="input__item-counter counter">
+              <div class="cart__item-counter counter">
                 <button class="counter__minus" type="button">-</button>
                 <p class="counter__number">1</p>
                 <button class="counter__plus" type="button">+</button>
@@ -183,7 +183,7 @@
             <h3 class="cart__order-title">Оформление</h3>
             <div class="cart__order-info">
               <p class="cart__order-count">
-                <span class="card__order-count">4</span>
+                <span class="cart__order-count">4</span>
                 товара на сумму:
               </p>
               <p class="cart__ordet-price">20&nbsp;000&nbsp;₽</p>
@@ -234,35 +234,35 @@
             <p class="order__info-id">№43435</p>
             <h3 class="order__subtitle">Данные доставки</h3>
           </div>
-          <label class="product__info-table product__table" for="">
-            <table class="product__info-table product__table">
-              <tr class="product__table-row">
-                <td class="product__table-item">Получатель</td>
-                <td class="product__table-item">Иванов Петр Александрович</td>
+          <label class="order__info-table product__table" for="">
+            <table class="order__info-table product__table">
+              <tr class="order__table-row">
+                <td class="order__table-item">Получатель</td>
+                <td class="order__table-item">Иванов Петр Александрович</td>
               </tr>
-              <tr class="product__table-row">
-                <td class="product__table-item">Телефон</td>
-                <td class="product__table-item">+7 (737) 346 23 00</td>
+              <tr class="order__table-row">
+                <td class="order__table-item">Телефон</td>
+                <td class="order__table-item">+7 (737) 346 23 00</td>
               </tr>
-              <tr class="product__table-row">
-                <td class="product__table-item">E-mail</td>
-                <td class="product__table-item">Ivanov84@gmail.com</td>
+              <tr class="order__table-row">
+                <td class="order__table-item">E-mail</td>
+                <td class="order__table-item">Ivanov84@gmail.com</td>
               </tr>
-              <tr class="product__table-row">
-                <td class="product__table-item">Адрес доставки</td>
-                <td class="product__table-item">Москва, ул. Ленина, 21, кв. 33</td>
+              <tr class="order__table-row">
+                <td class="order__table-item">Адрес доставки</td>
+                <td class="order__table-item">Москва, ул. Ленина, 21, кв. 33</td>
               </tr>
-              <tr class="product__table-row">
-                <td class="product__table-item">Способ оплаты</td>
-                <td class="product__table-item">Картой при получении</td>
+              <tr class="order__table-row">
+                <td class="order__table-item">Способ оплаты</td>
+                <td class="order__table-item">Картой при получении</td>
               </tr>
-              <tr class="product__table-row">
-                <td class="product__table-item">Способ получения</td>
-                <td class="product__table-item">Доставка</td>
+              <tr class="order__table-row">
+                <td class="order__table-item">Способ получения</td>
+                <td class="order__table-item">Доставка</td>
               </tr>
             </table>
           </label>
-          <button class="product__button" type="button">На главную</button>
+          <button class="order__button" type="button">На главную</button>
         </div>
       </section>
 
@@ -322,7 +322,7 @@
         <ul class="footer__developer-list">
           <li class="footer__developer-item">
             Designer:
-            <a href="mailto: AnastasiaIlina" class="footer__developer-link">
+            <a href="mailto:AnastasiaIlina" class="footer__developer-link">
               Anastasia Ilina 
             </a>
           </li>
