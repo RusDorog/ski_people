@@ -1,0 +1,60 @@
+.header {
+    padding: 18px 0;
+
+    // .header__wrapper
+
+    &__wrapper {
+    display: grid;
+    grid-template-areas: 'logo links'
+    'search search';
+    gap: 17px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #eeeff2;
+
+    }
+
+    // .header__logo-link
+
+    &__logo-link {
+    }
+
+    // .header__logo-image
+
+    &__logo-image {
+    }
+
+    // .header__search
+
+    &__search {
+    }
+
+    // .header__search-input
+
+    &__search-input {
+    }
+
+    // .header__search-button
+
+    &__search-button {
+    }
+
+    // .header__links-list
+
+    &__links-list {
+    }
+
+    // .header__link
+
+    &__link {
+    }
+
+    // .header__link-text
+
+    &__link-text {
+    }
+
+    // .header__link-count
+
+    &__link-count {
+    }
+}
