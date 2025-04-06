@@ -7,54 +7,113 @@
     display: grid;
     grid-template-areas: 'logo links'
     'search search';
+    justify-content: space-between;
+    align-items: center;
     gap: 17px;
     padding-bottom: 16px;
     border-bottom: 1px solid #eeeff2;
+
+        @media (min-width: 1024px) {
+            grid-template-areas: 'logo search links';
+        }
 
     }
 
     // .header__logo-link
 
     &__logo-link {
+        grid-area: logo;
     }
 
     // .header__logo-image
 
     &__logo-image {
+        width: 106px;
+
+        @media (min-width: 768px) {
+            width: 130px;
+        }
     }
 
     // .header__search
 
     &__search {
+        grid-area: search;
+        position: relative;
+        width: 100%;
+        height: 38px;
+
+        @media (min-width: 1024px) {
+            width: 408px;
+        }
+
+        @media (min-width: 1440px) {
+            width: 514px;
+        }
     }
 
     // .header__search-input
 
     &__search-input {
+        width: 100%;
+        height: 100%;
+        padding: 0 45px 0 24px;
+        background-color: #eeeff2;
+        border-radius: 32px;
+        border: none;
+
+        &::placeholder {
+            color: #969eae;
+        }
     }
 
     // .header__search-button
 
     &__search-button {
+        position: absolute;
+        content: '';
+        right: 24px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 16px;
     }
 
     // .header__links-list
 
     &__links-list {
+        grid-area: links;
+        display: flex;
+        column-gap: 16px;
+
+        @media (min-width: 1024px) {
+            column-gap: 24px;
+        }
     }
 
     // .header__link
 
     &__link {
+        display: flex;
+        align-items: center;
+        column-gap: 4px;
+        flex-direction: row-reverse;
+        color: #1c1c1c;
+
+        @media (min-width: 768px) {
+            flex-direction: row;
+
+        }
+
     }
 
     // .header__link-text
 
     &__link-text {
+        display: none;
+
+        @media (min-width: 768px) {
+            display: block;
+        }
     }
 
-    // .header__link-count
-
-    &__link-count {
-    }
 }

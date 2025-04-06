@@ -1,0 +1,42 @@
+.catalog {
+    overflow-x: hidden;
+    padding-bottom: 20px;
+
+    @media (min-width: 768px) {
+        padding-bottom: 32px;
+    }
+
+    @media (min-width: 768px) {
+        padding-bottom: 40px;
+    }
+
+    // .catalog__list
+
+    &__list {
+        display: flex;
+        gap: 4px;
+    }
+
+    // .catalog__link
+
+    &__link {
+        display: block;
+        color: #969eae;
+        background-color: #eeeff2;
+        border-radius: 32px;
+        padding: 8px 14px 10px 14px;
+        align-content: center;
+        border: 1px solid transparent;
+
+        &_active {
+            color: #fff;
+            background-color: #0044f0;
+        }
+
+        &:hover {
+            color: #0044f0;
+            background-color: #eeeff2;
+            border: 1px solid #0044f0;
+        }
+    }
+}
